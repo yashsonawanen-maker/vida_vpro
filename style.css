@@ -3,15 +3,14 @@ body {
   font-family: Arial;
 }
 
-/* Navbar (Glass effect 🔥) */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 15px 40px;
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.9);
 }
 
 .navbar ul {
@@ -35,7 +34,6 @@ body {
   position: absolute;
   background: white;
   top: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
@@ -56,21 +54,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 2s;
-}
-
-.hero-btn {
-  margin-top: 15px;
-  padding: 12px 25px;
-  border: none;
-  background: white;
-  color: black;
-  cursor: pointer;
 }
 
 /* Banner */
 .banner {
-  height: 200px;
+  height: 250px;
   background: url('https://www.vidaworld.com/content/dam/vida/banner.jpg') center/cover;
   display: flex;
   align-items: center;
@@ -88,7 +76,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 30px;
 }
 
 .card {
@@ -108,6 +95,13 @@ body {
   transform: scale(1.08);
 }
 
+/* Info */
+.info {
+  padding: 50px;
+  text-align: center;
+  background: #eee;
+}
+
 /* About */
 #about {
   padding: 50px;
@@ -120,12 +114,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
 }
 
 /* Smooth scroll */
