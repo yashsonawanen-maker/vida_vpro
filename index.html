@@ -28,7 +28,7 @@
   <section class="hero">
     <h2>Electric Future Starts Here</h2>
     <p>Smart. Sustainable. Powerful.</p>
-    <button>Book Now</button>
+    <button onclick="bookNow()">Book Now</button>
   </section>
 
   <!-- Banner -->
@@ -43,15 +43,17 @@
     <div class="product-container">
 
       <div class="card">
-        <img src="https://www.vidaworld.com/content/dam/vida/vida-v1.png">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
         <h3>VIDA V1 Pro</h3>
         <p>Range: 165 km</p>
+        <button onclick="bookNow()">Book</button>
       </div>
 
       <div class="card">
-        <img src="https://www.vidaworld.com/content/dam/vida/vida-v1-plus.png">
+        <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927">
         <h3>VIDA V1 Plus</h3>
         <p>Range: 143 km</p>
+        <button onclick="bookNow()">Book</button>
       </div>
 
     </div>
@@ -86,6 +88,16 @@
   <footer>
     <p>© 2026 VIDA Project | Designed by Yash Sonawane</p>
   </footer>
+
+  <!-- JS -->
+  <script>
+    function bookNow() {
+      let name = prompt("Enter your name:");
+      if (name) {
+        alert("Thank you " + name + "! Booking confirmed.");
+      }
+    }
+  </script>
 
 </body>
 </html>
